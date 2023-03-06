@@ -1,23 +1,22 @@
 ---
-- name: "Add Node.js from source"
-  become: true 
+- name: "Add Node.js from Nodesource"
+  become: true
   shell: |
-    curl -sL https://deb.nodesource.com/setup_13x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 - name: "Install Node.js 13"
-  become: true 
+  become: true
   apt:
-    name: ["node.js"]
+    name: ["nodejs"]
     state: latest
-    update_cache: yes 
+    update_cache: yes
 
 - name: "Install PM2 Globally"
   npm:
     name: pm2
-    global: yes 
+    global: yes
 
 - name: "move env variable to /etc/profile.d/"
   become: true 
   copy: 
     src: myenv.sh
     dest: /etc/profile.d/
-    
