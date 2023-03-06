@@ -312,7 +312,7 @@ jobs:
           at: ~/
 
       - install_nodejs
-      - isntall_awscli
+      - install_awscli
       - install_ansible
       - run:
           name: Get backend url
@@ -353,7 +353,7 @@ jobs:
           at: ~/
 
       - install_nodejs
-      - isntall_awscli
+      - install_awscli
       - install_ansible
       - run:
           name: Deploy backend
