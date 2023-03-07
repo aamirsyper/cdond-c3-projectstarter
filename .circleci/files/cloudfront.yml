@@ -3,7 +3,10 @@ Description: >
 
 Parameters:
   WorkflowID:
-    Description: Unique identifier.
+    Description: |
+      Unique identifier.
+      Run with:
+      `aws cloudformation deploy --template-file .circleci/files/cloudfront.yml --stack-name InitialStack --parameter-overrides WorkflowID=udapeople-697114541335`
     Type: String
 
 
