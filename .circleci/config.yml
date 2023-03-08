@@ -448,7 +448,7 @@ jobs:
                 --stack-status-filter CREATE_COMPLETE --no-paginate --output text)) 
             echo Stack names: "${STACKS[@]}"
             export OldWorkflowID=$(curl --insecure https://kvdb.io/3uPKwkHBWbwMWo7giejVRd/old_workflow_id)
-            echo Old Workflow ID: $OldWorkflowID 
+            echo OldWorkflowID: $OldWorkflowID 
             if [[ "${STACKS[@]}" =~ "${OldWorkflowID}" ]]
             then
               echo "Cleaning up----------------------------------"
