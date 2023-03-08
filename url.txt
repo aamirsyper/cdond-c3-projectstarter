@@ -1,0 +1,3 @@
+https://github.com/aamirsyper/cdond-c3-projectstarter  --> Git public URL
+
+http://udapeople-94f18e3.s3-website-us-east-1.amazonaws.com/#/employees  ---> Public URL for S3 bucket
